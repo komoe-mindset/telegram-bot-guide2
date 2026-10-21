@@ -1,0 +1,9 @@
+{
+  "name": "Mingalar Bot Lab",
+  "description": "Telegram bot ကို မြန်မာလို အဆင့်ဆင့် လေ့လာမယ်။ စနစ်လိုအပ်ချက်၊ Python အခြေခံ၊ BotFather၊ လက်တွေ့ demo နဲ့ download ဆွဲနိုင်တဲ့ starter kit။",
+  "prompt": "Telegram bot tutorial and playground in Myanmar language",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
