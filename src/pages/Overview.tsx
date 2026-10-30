@@ -226,6 +226,28 @@ export const Overview: React.FC<OverviewProps> = ({ onNavigate }) => {
             <Icon name="arrow" />
           </span>
         </a>
+
+        <a
+          className="path-card"
+          href="#voice-bot"
+          onClick={(e) => {
+            e.preventDefault();
+            onNavigate('voice-bot');
+          }}
+        >
+          <span className="card-icon teal">
+            <Icon name="spark" />
+          </span>
+          <span className="card-kicker">04 · CLOUDFLARE + GEMINI</span>
+          <h3>Voice-to-Text Bot</h3>
+          <p>
+            Cloudflare Workers နှင့် Gemini AI ပေါင်းစပ်ပြီး Telegram Voice message ကို English စာသားပြောင်းမယ့် bot လမ်းညွှန်။
+          </p>
+          <span className="card-bottom">
+            <span>အသံမှ စာသားသို့ ပြောင်းလဲခြင်း</span>
+            <Icon name="arrow" />
+          </span>
+        </a>
       </div>
 
       <div className="section-top">

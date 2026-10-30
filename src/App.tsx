@@ -13,6 +13,7 @@ import { Playground } from './pages/Playground';
 import { Downloader } from './pages/Downloader';
 import { Troubleshoot } from './pages/Troubleshoot';
 import { Skills } from './pages/Skills';
+import { VoiceBotGuide } from './pages/VoiceBotGuide';
 import { Resources } from './pages/Resources';
 
 const readStorage = <T,>(key: string, fallback: T): T => {
@@ -27,7 +28,7 @@ const readStorage = <T,>(key: string, fallback: T): T => {
 export const App: React.FC = () => {
   const getHashPage = (): string => {
     const h = window.location.hash.slice(1).split('?')[0];
-    const valid = ['overview', 'requirements', 'basics', 'setup', 'playground', 'downloader', 'troubleshoot', 'skills', 'resources'];
+    const valid = ['overview', 'requirements', 'basics', 'setup', 'playground', 'downloader', 'troubleshoot', 'skills', 'voice-bot', 'resources'];
     return valid.includes(h) ? h : 'overview';
   };
 
@@ -154,6 +155,8 @@ export const App: React.FC = () => {
         return <Troubleshoot onNotify={showToast} />;
       case 'skills':
         return <Skills onNotify={showToast} />;
+      case 'voice-bot':
+        return <VoiceBotGuide onNavigate={navigateTo} onNotify={showToast} />;
       case 'resources':
         return <Resources onNotify={showToast} />;
       default:

@@ -15,7 +15,10 @@ export const modules: CourseModule[] = [
   { id: 'downloader', name: 'Video Downloader', en: 'Explore the reference', desc: 'GitHub repo ရဲ့ နောက်ကွယ်', icon: 'download' },
   { id: 'troubleshoot', name: 'အခက်အခဲ ဖြေရှင်းမယ်', en: 'Tips & troubleshooting', desc: 'တွေ့ရတတ်တဲ့ errors နဲ့ အဖြေများ', icon: 'tool' },
   { id: 'skills', name: 'AI Agent အတွက် Skill', en: 'Make it repeatable', desc: 'အလုပ်လုပ်တဲ့ workflow ကို သိမ်းမယ်', icon: 'spark' },
+  { id: 'voice-bot', name: 'Voice-to-Text Bot', en: 'Workers + Gemini AI', desc: 'Telegram voice messages ကို Gemini AI ဖြင့် စာသားပြောင်းမယ့် bot', icon: 'bot' },
 ];
+
+export * from './voiceBotData';
 
 export const readyItems = [
   { id: 'telegram', title: 'Telegram account ရှိပြီ', desc: 'Official Telegram app မှာ login ဝင်ထားပါတယ်။' },
@@ -209,6 +212,7 @@ export const problems: ProblemItem[] = [
 ];
 
 export const sourceLinks = [
+  { name: 'AI Skill Builder', desc: 'AI Skill ဖန်တီးတည်ဆောက်ရန် interactive website (ai-skill-builder.komoe.org)', url: 'https://ai-skill-builder.komoe.org/', icon: 'spark' },
   { name: 'BotFather & bot features', desc: 'Telegram official documentation', url: 'https://core.telegram.org/bots/features#botfather', icon: 'plane' },
   { name: 'Python echo bot example', desc: 'python-telegram-bot official example', url: 'https://docs.python-telegram-bot.org/en/stable/examples.echobot.html', icon: 'code' },
   { name: 'Telegram Bot API', desc: 'Upload limits, polling & webhooks', url: 'https://core.telegram.org/bots/api', icon: 'book' },

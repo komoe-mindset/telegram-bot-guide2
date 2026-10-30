@@ -97,16 +97,29 @@ export const Skills: React.FC<SkillsProps> = ({ onNotify }) => {
           <p>
             ဒီ draft ကို download ဆွဲထားတာက Codex ထဲ install လုပ်ပြီးသား မဟုတ်ပါဘူး။ အသုံးပြုမယ့် agent ရဲ့ skill support နဲ့ installation location ကို စစ်ပါ။
           </p>
-          <button
-            type="button"
-            className="button secondary"
-            onClick={handleDownloadSkill}
-          >
-            <Icon name="download" />
-            SKILL.md download
-          </button>
+          <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginTop: '14px', alignItems: 'center' }}>
+            <button
+              type="button"
+              className="button secondary"
+              onClick={handleDownloadSkill}
+            >
+              <Icon name="download" />
+              SKILL.md download
+            </button>
+            <a
+              href="https://ai-skill-builder.komoe.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button light"
+              title="AI Skill Builder (https://ai-skill-builder.komoe.org/)"
+            >
+              <Icon name="spark" />
+              AI Skill Builder သို့ သွားမယ်
+              <Icon name="external" />
+            </a>
+          </div>
           <div className="step-tip">
-            Codex မှာ <code>$skill-creator</code> ကို သုံးပြီး ဒီ draft ကို သင့်အလုပ်လုပ်ပုံနဲ့ ကိုက်အောင် ပြင်ဆင်ခိုင်းနိုင်ပါတယ်။
+            Codex မှာ <code>$skill-creator</code> သို့မဟုတ် <a href="https://ai-skill-builder.komoe.org/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', fontWeight: 600 }}>AI Skill Builder</a> ကို သုံးပြီး ဒီ draft ကို သင့်အလုပ်လုပ်ပုံနဲ့ ကိုက်အောင် ပြင်ဆင်ခိုင်းနိုင်ပါတယ်။
           </div>
         </div>
       </div>

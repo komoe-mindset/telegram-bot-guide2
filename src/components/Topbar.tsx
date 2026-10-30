@@ -37,13 +37,28 @@ export const Topbar: React.FC<TopbarProps> = ({
         <span className="language-badge">မြန်မာ / EN</span>
         <a
           className="github-link"
+          href="https://ai-skill-builder.komoe.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="AI Skill Builder (https://ai-skill-builder.komoe.org/)"
+        >
+          <Icon name="spark" />
+          <span>AI Skill Builder</span>
+          <span>
+            <Icon name="external" />
+          </span>
+        </a>
+        <a
+          className="github-link"
           href="https://github.com/lumawaung/multi-platform-video-downloader"
           target="_blank"
           rel="noopener noreferrer"
         >
           <Icon name="github" />
           <span>Reference repo</span>
-          <Icon name="external" />
+          <span>
+            <Icon name="external" />
+          </span>
         </a>
       </div>
     </header>

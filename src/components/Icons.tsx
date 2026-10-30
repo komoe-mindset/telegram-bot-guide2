@@ -138,11 +138,12 @@ export const ICONS: Record<string, React.ReactNode> = {
 interface IconProps {
   name: string;
   className?: string;
+  style?: React.CSSProperties;
 }
 
-export const Icon: React.FC<IconProps> = ({ name, className }) => {
+export const Icon: React.FC<IconProps> = ({ name, className, style }) => {
   return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" className={className}>
+    <svg viewBox="0 0 24 24" aria-hidden="true" className={className} style={style}>
       {ICONS[name] || ICONS.circle}
     </svg>
   );

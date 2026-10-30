@@ -18,7 +18,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
   onNavigate,
 }) => {
   const completedCount = completed.size;
-  const progressPercent = (completedCount / 8) * 100;
+  const totalModules = modules.length;
+  const progressPercent = (completedCount / totalModules) * 100;
 
   return (
     <>
@@ -90,7 +91,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         <div className="sidebar-bottom">
           <div className="your-progress">
             <span>သင့်လေ့လာမှု</span>
-            <strong id="progress-label">{completedCount} / 8</strong>
+            <strong id="progress-label">{completedCount} / {totalModules}</strong>
           </div>
           <div className="progress-track">
             <span
@@ -99,6 +100,17 @@ export const Sidebar: React.FC<SidebarProps> = ({
             />
           </div>
           <p>ပြီးဆုံးမှုကို ဒီ browser ထဲမှာ သိမ်းပေးပါတယ်။</p>
+          <a
+            href="https://ai-skill-builder.komoe.org/"
+            className="resources-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="AI Skill Builder (https://ai-skill-builder.komoe.org/)"
+          >
+            <Icon name="spark" />
+            AI Skill Builder
+            <span>↗</span>
+          </a>
           <a
             href="#resources"
             className="resources-link"
